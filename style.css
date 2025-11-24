@@ -1,0 +1,193 @@
+/* ===============================
+   PALETA PROFESIONAL
+================================ */
+:root {
+  --bg: #0e0f11;
+  --panel: #1a1c20;
+  --panel-light: #22252b;
+  --text: #e8ecf2;
+  --text-muted: #9aa2b1;
+
+  --primary: #4c8bf5;
+  --primary-hover: #3a74d5;
+
+  --accent: #a167ff;
+  --accent-hover: #8c51e3;
+
+  --success: #19c37d;
+  --success-hover: #0ea86a;
+
+  --radius: 10px;
+}
+
+/* ===============================
+   BASE
+================================ */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: var(--panel);
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 0 28px rgba(0,0,0,0.35);
+}
+
+/* ===============================
+   TITULOS — ESTILO PREMIUM
+================================ */
+h1, h2, h3 {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 8px rgba(76,139,245,0.35);
+}
+
+/* ===============================
+   FORMULARIOS
+================================ */
+label {
+  color: var(--text-muted);
+  margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  background: var(--panel-light);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 13px 14px;
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input::placeholder {
+  color: var(--text-muted);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(76,139,245,0.3);
+}
+
+/* ===============================
+   BOTONES — ESTILO ELEGANTE
+================================ */
+.btn {
+  padding: 12px 18px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  border: none;
+  transition: 0.25s ease;
+  color: white !important;
+}
+
+/* Azul */
+.btn-primary {
+  background: var(--primary);
+}
+.btn-primary:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 0 12px rgba(76,139,245,0.4);
+}
+
+/* Verde */
+.btn-success {
+  background: var(--success);
+}
+.btn-success:hover {
+  background: var(--success-hover);
+  box-shadow: 0 0 12px rgba(25,195,125,0.4);
+}
+
+/* Morado premium */
+.btn-warning {
+  background: var(--accent);
+}
+.btn-warning:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 0 13px rgba(161,103,255,0.4);
+}
+
+/* Gris */
+.btn-secondary {
+  background: #2e3136;
+  color: var(--text-muted) !important;
+}
+.btn-secondary:hover {
+  background: #373b41;
+}
+
+/* ===============================
+   TABLAS — MODO OSCURO NÍTIDO
+================================ */
+.table {
+  width: 100%;
+  background: var(--panel-light);
+  color: white; /* <-- Texto general blanco */
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* Encabezado */
+.table thead {
+  background: #14161c !important;
+}
+
+.table th {
+  padding: 14px;
+  color: #ffffff !important;   /* <-- Blanco puro */
+  font-weight: 700;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Celdas */
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: #ffffff !important;   /* <-- Blanco puro */
+}
+
+/* Filas alternadas */
+.table tr:nth-child(odd) td {
+  background: #2a2c33 !important;
+}
+
+.table tr:nth-child(even) td {
+  background: #1e2025 !important;
+}
+
+/* Hover fila */
+.table tr:hover td {
+  background: #32343b !important;
+  transition: 0.2s ease;
+}
+
+/* ===============================
+   CARDS
+================================ */
+.card {
+  background: var(--panel-light);
+  padding: 25px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 0 18px rgba(0,0,0,0.25);
+}
